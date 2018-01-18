@@ -31,4 +31,43 @@ class ParamsExamplesController < ApplicationController
     render json: {guess: input_guess, message: output_message}
   end
 
+  def url_segment_params
+    input_value = params["wildcard_variable"]
+    render json: {message: "The url segment params is #{input_value}"}
+  end
+
+
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
